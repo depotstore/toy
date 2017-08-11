@@ -10,7 +10,7 @@
   <%= @user.email %>
 </p>
 
-<% if @user && @user.microposts %>
+<% if @user && @user.microposts.size > 0 %>
   <p>
     <strong>First micropost content:</strong>
     <%= @user.microposts.first.content %>
